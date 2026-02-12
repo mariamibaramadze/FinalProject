@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Tests Suite"  parallel="tests" thread-count="2">
+    <test name="UI Tests">
+        <classes>
+            <class name="uitests.RegisterTest"/> <!--test case 1-->
+            <class name="uitests.SignupTest"/> <!--test case 3-->
+            <class name="uitests.RegwexistingTest"/> <!--test case 5-->
+            <class name="uitests.ContactusTest"/> <!--test case 6-->
+            <class name="uitests.TestcaseTest"/> <!--test case 7-->
+            <class name="uitests.LogoutTest"/> <!--test case 4-->
+            <class name="uitests.DeleteAccountTest"/> <!--test case 2-->
+            <class name="uitests.CartSubscriptionTest"/>
+            <class name="uitests.HomeSubscriptionTest"/>
+            <class name="uitests.ProductsVerificationTest"/>
+
+        </classes>
+    </test>
+</suite>
