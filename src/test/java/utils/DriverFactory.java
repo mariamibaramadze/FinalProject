@@ -16,7 +16,10 @@ public class DriverFactory {
     public static void initDriver() {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        // Prefer explicit waits in BasePage. Keep implicit small or remove.
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+
         driverThreadLocal.set(driver);
     }
 

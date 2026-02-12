@@ -17,15 +17,15 @@ public class RegisterTest extends TestBase {
         SignupPage signup = home.clickLoginButton();
         Assert.assertTrue(signup.isNewUserVisible(), "new user is not Visible ");
 
-        signup.enterName("raia")
-                .enterEmail("pajalustaa@gmail.com")
+        signup.enterName("magariproeqti")
+                .enterEmail("dzlivsmovrchit@gmail.com")
                 .clickSignUpButton();
 
         RegisterPage register = new RegisterPage(DriverFactory.getDriver());
         Assert.assertTrue(register.isVisibleAccountInfo(), " This Page is not Visible ");
 
         register.selectTitleMrs()
-                .enterPassword("ratoo")
+                .enterPassword("pslplspls")
                 .setDOB("5","January","2018")
                 .selectNewsletter()
                 .selectOffers()

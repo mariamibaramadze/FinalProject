@@ -5,7 +5,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import utils.DriverFactory;
 
-
 public class TestBase {
 
     protected WebDriver driver;
@@ -13,7 +12,9 @@ public class TestBase {
     @BeforeMethod
     public void setUp() {
         DriverFactory.initDriver();
-        driver = DriverFactory.getDriver(); // ← THIS LINE IS IMPORTANT
+        driver = DriverFactory.getDriver();
+        System.out.println("THREAD=" + Thread.currentThread().getId()
+                + " | UI TEST=" + this.getClass().getSimpleName());
     }
 
     @AfterMethod

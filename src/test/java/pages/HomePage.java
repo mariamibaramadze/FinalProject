@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-//agi aris lokatori
+
 public class HomePage extends BasePage {
     private By Slider = By.id("slider");
     private By LoginButton = By.xpath("//a[text()=' Signup / Login']");
@@ -34,7 +34,7 @@ public class HomePage extends BasePage {
     }
 
 
-//აქედან მეორე ტესტია
+    //    test case 2
     private By loggedInAsUser = By.xpath("//a[contains(normalize-space(.), 'Logged in as')]");
 
     private By deleteAccountButton = By.xpath("//a[@href='/delete_account']");
@@ -47,17 +47,17 @@ public class HomePage extends BasePage {
         click(deleteAccountButton);
         return new AccountDeletedPage(driver);
     }
-//აქამდე მეორე
 
 
-//აქედან მეოთხეა
+
+    //    test case 4
 private By logoutButton = By.xpath("//a[@href='/logout']");
 
     public SignupPage clickLogout() {
         click(logoutButton);
         return new SignupPage(driver);
     }
-//აქამდე მეოთხე
+
 
 
 
@@ -74,7 +74,6 @@ private By footer = By.id("footer");
 
 
     private By subscriptionSuccessMessage = By.id("success-subscribe");
-
 
 
 
@@ -101,10 +100,8 @@ private By footer = By.id("footer");
     }
 
 
-//    aqadea 10
 
-
-//    aqedan 11
+//    test case 11
 
     private By cartButton = By.xpath("//a[@href='/view_cart']");
 
@@ -114,9 +111,7 @@ private By footer = By.id("footer");
     }
 
 
-//aqamde 11
-
-//    aqedan 8
+//    test case 8
 
     private By productsButton = By.cssSelector("a[href='/products']");
 
